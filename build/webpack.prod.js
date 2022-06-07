@@ -3,6 +3,7 @@ const baseConfig = require('./webpack.common.js');
 module.exports = merge(baseConfig, {
   mode: 'production',
   output: {
-    clean: true
+    clean: true,
+    output: '[name].[contenthash].js',
   }
 });

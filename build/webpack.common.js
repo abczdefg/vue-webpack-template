@@ -67,6 +67,7 @@ module.exports = {
   ],
   output: {
     filename: '[name].js',
+    libraryTarget: 'umd',
     path: resolve('dist'),
   }
 };

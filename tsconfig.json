@@ -4,6 +4,8 @@
     "lib": ["dom", "es6", "es7"],
     "strict": true,
     "moduleResolution": "node",
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
     "experimentalDecorators": true
   }
 }

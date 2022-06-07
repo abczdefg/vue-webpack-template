@@ -2,9 +2,10 @@ const { merge } = require('webpack-merge');
 const baseConfig = require('./webpack.common.js');
 module.exports = merge(baseConfig, {
   mode: 'development',
-  devtool: 'inline-source-map',
+  devtool: 'eval-cheap-module-source-map',
   devServer: {
     hot: true,
-    port: 8001
+    historyApiFallback: true,
+    port: 8001,
   }
 });
